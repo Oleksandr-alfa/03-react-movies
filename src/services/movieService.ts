@@ -8,6 +8,8 @@ interface MovieHttpResponse {
 
 
 export const fetchMovies = async (topic: string) => {
+  // if (topic === '')
+  //   return null;
     const response = await axios.get<MovieHttpResponse>(
   `https://api.themoviedb.org/3/search/movie?`,
      {

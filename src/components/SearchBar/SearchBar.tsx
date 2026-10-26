@@ -1,3 +1,4 @@
+import toast from 'react-hot-toast';
 import styles from './SearchBar.module.css';
 // import axios from 'axios';
 interface SearchFormProps {
@@ -8,7 +9,12 @@ interface SearchFormProps {
 export default function SearchBar({onSubmit}: SearchFormProps) {
   const handleSubmit = (formData: FormData) => {
     const filmForSearch = formData.get("query") as string;
-   
+    if (filmForSearch === '') {
+      toast.error('Please enter your search query.');
+      return;
+    }
+      
+    
     onSubmit(filmForSearch);
     console.log(filmForSearch);
   }
