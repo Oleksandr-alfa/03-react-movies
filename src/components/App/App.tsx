@@ -1,14 +1,14 @@
 import styles from './App.module.css';
 // import axios from "axios";
-import SearchBar from './components/SearchBar/SearchBar';
-import { fetchMovies } from './services/movieService';
-import MovieGrid from './components/MovieGrid/MovieGrid';
+import SearchBar from '../SearchBar/SearchBar';
+import { fetchMovies } from '../../services/movieService';
+import MovieGrid from '../MovieGrid/MovieGrid';
 import { useState } from 'react';
-import type { Movie } from './types/movie';
-import MovieModal from './components/MovieModal/MovieModal';
+import type { Movie } from '../../types/movie';
+import MovieModal from '../MovieModal/MovieModal';
 import toast, { Toaster } from 'react-hot-toast';
-import ErrorMessage from './components/ErrorMessage/ErrorMessage';
-import Loader from './components/Loader/Loader';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import Loader from '../Loader/Loader';
 
 
 
