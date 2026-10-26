@@ -7,7 +7,7 @@ interface MovieHttpResponse {
 }
 
 
-export const fetchMovies = async (topic: string) => {
+export const fetchMovies = async (topic: string): Promise<Movie[]> => {
   // if (topic === '')
   //   return null;
     const response = await axios.get<MovieHttpResponse>(
