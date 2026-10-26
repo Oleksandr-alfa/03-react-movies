@@ -13,10 +13,7 @@ export default function SearchBar({onSubmit}: SearchFormProps) {
       toast.error('Please enter your search query.');
       return;
     }
-      
-    
     onSubmit(filmForSearch);
-    console.log(filmForSearch);
   }
     return (<header className={styles.header}>
   <div className={styles.container}>

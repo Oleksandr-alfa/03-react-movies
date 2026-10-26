@@ -44,8 +44,9 @@ export default function App() {
     
       setSelectedMovie(movie);
       setIsModalOpen(true);
-      console.log(selectedMovie);
+      
     }
+  
     const closeModal = () => {
       setIsModalOpen(false);
       setSelectedMovie(null);
